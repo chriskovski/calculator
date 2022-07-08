@@ -1,0 +1,69 @@
+body {
+  min-height: 100vh;
+  font-size: 2em;
+  text-align: center;
+}
+
+#calculator {
+  border: 4px solid black;
+  margin: 2vh 25vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#output {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 4px solid black;
+  padding: 1vh 2vw;
+  height: 4rem;
+  font-size: 3.5rem;
+}
+
+#dial {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+button{
+  border-radius: 0px;
+  color: white;
+  font-size: 3rem;
+  background-color: black;
+  border: 1px solid red;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+button:hover {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+button:active {
+  box-shadow: inset 0 0 0.5em white;
+}
+
+.opButtons{
+  color: black;
+  background-color: red;
+  border: 1px solid black;
+  margin-right: -1px;
+}
+.opButtons:hover,
+.equal:hover{
+  background-color: rgb(255, 0, 0, 0.6);
+}
+.opButtons:active,
+.equal:active{
+  box-shadow: inset 0 0 0.5em black;
+}
+
+.equal{
+  color: black;
+  background-color: red;
+}
+
+#result{
+  margin-left: auto;
+}

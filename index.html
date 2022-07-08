@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>The Calculator 2000</h1>
+    <div id="calculator">
+      <div id="output">
+      <div data-first-operation class="first-operation"></div>
+      <div data-operator class="operator"></div>
+      <div data-second-operation class="second-operation"></div>
+      <div data-result id="result"></div>
+    </div>
+      <div id="dial">
+        <button data-operation class="opButtons" onclick="opChoose(this)" value="plus">+</button>
+        <button class="number" id="one" value="1" onclick="storeValue(this)">1</button>
+        <button class="number" id="two" value="2" onclick="storeValue(this)">2</button>
+        <button class="number" id="three" value="3" onclick="storeValue(this)">3</button>
+        <button data-operation class="opButtons" onclick="opChoose(this)" value="minus">-</button>
+        <button class="number" id="four" value="4" onclick="storeValue(this)">4</button>
+        <button class="number" id="five" value="5" onclick="storeValue(this)">5</button>
+        <button class="number" id="six" value="6" onclick="storeValue(this)">6</button>
+        <button data-operation class="opButtons" onclick="opChoose(this)" value="multiply">*</button>
+        <button class="number" id="seven" value="7" onclick="storeValue(this)">7</button>
+        <button class="number" id="eight" value="8" onclick="storeValue(this)">8</button>
+        <button class="number" id="nine" value="9" onclick="storeValue(this)">9</button>
+        <button data-operation class="opButtons" onclick="opChoose(this)" value="divide">÷</button>
+        <button data-all-clear onclick="clearAll()">Clear</button>
+        <button class="number" id="zero" value="0" onclick="storeValue(this)">0</button>
+        <button data-equals class="equal" onclick="operate(displayValueOne, displayValueTwo)">=</button>
+      </div>
+    </div>
+	<script src="script.js"></script>
+  </body>
+</html>
